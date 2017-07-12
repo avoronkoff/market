@@ -15,7 +15,7 @@
       <td class="hidden-sm hidden-xs"><img [src]="phone.img" height="120"></td>
       <td>{{phone.phone}}</td>
       <td class="text-center hidden-sm hidden-xs">1 шт.</td>
-      <td class="text-center">{{phone.price | currencyFormatPipe}}</td>
+      <td class="text-center">{{phone.price | CurrencyFormatPipe}}</td>
       <td class="text-right">
         <button type="button" class="btn btn-warning" (click)="delete_from_cart(phone)">delete</button>
       </td>

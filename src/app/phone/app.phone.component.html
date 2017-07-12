@@ -5,7 +5,7 @@
         <div class="card-block text-center">
           <img [src]="phone.img" alt="phone" height="120">
           <h5 class="card-title">{{phone.phone}}</h5>
-          <p class="card-text">{{phone.price | currencyFormatPipe}}</p>
+          <p class="card-text">{{phone.price | CurrencyFormatPipe}}</p>
           <app-modal-component [phone]="phone"></app-modal-component>
         </div>
       </div>

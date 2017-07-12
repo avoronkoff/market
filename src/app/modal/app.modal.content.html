@@ -11,7 +11,7 @@
     </div>
     <div class="col">
       <h5>{{phone.phone}}</h5>
-      <h6 class="text-muted">{{phone.price | currencyFormatPipe}}</h6>
+      <h6 class="text-muted">{{phone.price | CurrencyFormatPipe}}</h6>
       <input type="number" class="form-control counts" min="0" [(ngModel)]="phone.counts">
     </div>
   </div>

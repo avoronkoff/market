@@ -1,13 +1,14 @@
 import {Component, Input} from '@angular/core';
 import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import { Phone } from '../phone';
-import {PhoneService} from "../phone.service";
+import {PhoneService} from '../phone.service';
 
 @Component({
   selector: 'app-modal-content',
   templateUrl: './app.modal.content.html'
 })
-export class ModalContent {
+
+export class ModalContentComponent {
   @Input() phone: Phone;
 
   constructor(

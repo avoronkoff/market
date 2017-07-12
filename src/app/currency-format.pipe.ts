@@ -1,10 +1,10 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-@Pipe({name: 'currencyFormatPipe'})
+@Pipe({name: 'CurrencyFormatPipe'})
 
-export class currencyFormatPipe implements PipeTransform {
+export class CurrencyFormatPipe implements PipeTransform {
   transform(exponent: string): string {
     exponent = exponent.replace(/ /g,'').trim();
-    return exponent + " руб.";
+    return exponent + ' руб.';
   }
 }
