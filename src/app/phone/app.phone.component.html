@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let phone of phones">
+      <div class="card box-shadow">
+        <div class="card-block text-center">
+          <img [src]="phone.img" alt="phone" height="120">
+          <h5 class="card-title">{{phone.phone}}</h5>
+          <p class="card-text">{{phone.price | currencyFormatPipe}}</p>
+          <app-modal-component [phone]="phone"></app-modal-component>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

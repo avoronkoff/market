@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Cart</h2>
+  <table class="table table-condensed">
+    <thead>
+    <tr>
+      <th class="hidden-sm hidden-xs">img</th>
+      <th>phone</th>
+      <th class="text-center hidden-sm hidden-xs">counts</th>
+      <th class="text-center">price</th>
+      <th class="text-right">delete</th>
+    </tr>
+    </thead>
+    <tbody *ngIf="cart_phones.length > 0">
+    <tr *ngFor="let phone of cart_phones">
+      <td class="hidden-sm hidden-xs"><img [src]="phone.img" height="120"></td>
+      <td>{{phone.phone}}</td>
+      <td class="text-center hidden-sm hidden-xs">1 шт.</td>
+      <td class="text-center">{{phone.price | currencyFormatPipe}}</td>
+      <td class="text-right">
+        <button type="button" class="btn btn-warning" (click)="delete_from_cart(phone)">delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <h3 class="text-center text-muted" *ngIf="cart_phones.length === 0">Empty cart</h3>
+</div>
