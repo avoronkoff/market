@@ -3,10 +3,12 @@ import { PhoneService } from '../phone.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.nav.component.html'
+  templateUrl: './app.nav.component.html',
+  styleUrls: [ './app.nav.component.css' ]
 })
-export class AppComponent implements OnInit {
 
+export class AppComponent implements OnInit {
+  public show_nav = true;
   public nav_cart;
 
   constructor(

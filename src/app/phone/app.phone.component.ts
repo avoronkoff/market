@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+
 import { Phone } from '../phone';
 import { PhoneService } from '../phone.service';
 
@@ -9,9 +10,7 @@ import { PhoneService } from '../phone.service';
 })
 export class PhoneComponent implements OnInit {
   phones: Phone[];
-
-  constructor(
-    private phoneService: PhoneService) { }
+  constructor( private phoneService: PhoneService ) { }
 
   ngOnInit(): void {
     this.getHeroes();

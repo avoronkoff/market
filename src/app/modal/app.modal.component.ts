@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+
 import { Phone } from '../phone';
 import {ModalContentComponent} from './app.modal.content';
 
@@ -9,8 +10,7 @@ import {ModalContentComponent} from './app.modal.content';
 })
 export class ModalComponent {
   @Input() phone: Phone;
-  constructor(
-    private modalService: NgbModal) {}
+  constructor( private modalService: NgbModal ) {}
 
   open(phone) {
     const modalRef = this.modalService.open(ModalContentComponent);
